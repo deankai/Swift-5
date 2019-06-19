@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		082BB84DD38A3412F93C760B /* Pods_FirebaseQuery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AAA4772D1C5285C3F9AED2 /* Pods_FirebaseQuery.framework */; };
 		3D07B2E422B37A6E0010ECF7 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D07B2E322B37A6E0010ECF7 /* books.json */; };
+		3D18B12722B3D8ED00737E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D18B12622B3D8EC00737E4F /* GoogleService-Info.plist */; };
+		3D18B12922B3DBB700737E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D18B12822B3DBB700737E4F /* Assets.xcassets */; };
 		3D5508A222B09E7900B551B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508A122B09E7900B551B6 /* AppDelegate.swift */; };
 		3D5508A422B09E7900B551B6 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508A322B09E7900B551B6 /* StockViewController.swift */; };
 		3D5508A722B09E7900B551B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5508A522B09E7900B551B6 /* Main.storyboard */; };
-		3D5508A922B09E7A00B551B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5508A822B09E7A00B551B6 /* Assets.xcassets */; };
 		3D5508AC22B09E7A00B551B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5508AA22B09E7A00B551B6 /* LaunchScreen.storyboard */; };
-		3D5508B822B0A4A400B551B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D5508B722B0A4A400B551B6 /* GoogleService-Info.plist */; };
 		3D5508BD22B0A6BE00B551B6 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508BC22B0A6BE00B551B6 /* Cells.swift */; };
 		3D5508C022B0ADA900B551B6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508BF22B0ADA900B551B6 /* Models.swift */; };
 		3D5508C322B0AE8B00B551B6 /* FIRDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508C222B0AE8B00B551B6 /* FIRDatabase.swift */; };
@@ -22,18 +22,19 @@
 		3D5508C922B0E96700B551B6 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5508C822B0E96700B551B6 /* Views.swift */; };
 		3DCE069522B2149500728FB0 /* ProductActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE069422B2149500728FB0 /* ProductActionViewController.swift */; };
 		3DCE069722B21BAC00728FB0 /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE069622B21BAC00728FB0 /* NavigationControllers.swift */; };
+		3DDCF2ED22B76C03004A27B4 /* FIRStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCF2EC22B76C03004A27B4 /* FIRStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D07B2E322B37A6E0010ECF7 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
+		3D18B12622B3D8EC00737E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D18B12822B3DBB700737E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D55089E22B09E7900B551B6 /* FirebaseQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5508A122B09E7900B551B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D5508A322B09E7900B551B6 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
 		3D5508A622B09E7900B551B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D5508A822B09E7A00B551B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5508AB22B09E7A00B551B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5508AD22B09E7A00B551B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D5508B722B0A4A400B551B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D5508BC22B0A6BE00B551B6 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		3D5508BF22B0ADA900B551B6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3D5508C222B0AE8B00B551B6 /* FIRDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabase.swift; sourceTree = "<group>"; };
@@ -41,6 +42,7 @@
 		3D5508C822B0E96700B551B6 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		3DCE069422B2149500728FB0 /* ProductActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductActionViewController.swift; sourceTree = "<group>"; };
 		3DCE069622B21BAC00728FB0 /* NavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
+		3DDCF2EC22B76C03004A27B4 /* FIRStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRStorage.swift; sourceTree = "<group>"; };
 		647B20D04839B68D38CD78E9 /* Pods-FirebaseQuery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseQuery.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseQuery/Pods-FirebaseQuery.debug.xcconfig"; sourceTree = "<group>"; };
 		75AAA4772D1C5285C3F9AED2 /* Pods_FirebaseQuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseQuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45777F74A8C6214636D72F2 /* Pods-FirebaseQuery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseQuery.release.xcconfig"; path = "Target Support Files/Pods-FirebaseQuery/Pods-FirebaseQuery.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				3D07B2E322B37A6E0010ECF7 /* books.json */,
-				3D5508A822B09E7A00B551B6 /* Assets.xcassets */,
+				3D18B12822B3DBB700737E4F /* Assets.xcassets */,
 			);
 			path = Material;
 			sourceTree = "<group>";
@@ -122,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5508AD22B09E7A00B551B6 /* Info.plist */,
-				3D5508B722B0A4A400B551B6 /* GoogleService-Info.plist */,
+				3D18B12622B3D8EC00737E4F /* GoogleService-Info.plist */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5508C222B0AE8B00B551B6 /* FIRDatabase.swift */,
+				3DDCF2EC22B76C03004A27B4 /* FIRStorage.swift */,
 				3D5508C822B0E96700B551B6 /* Views.swift */,
 			);
 			path = Utility;
@@ -232,9 +235,9 @@
 			files = (
 				3D07B2E422B37A6E0010ECF7 /* books.json in Resources */,
 				3D5508AC22B09E7A00B551B6 /* LaunchScreen.storyboard in Resources */,
-				3D5508B822B0A4A400B551B6 /* GoogleService-Info.plist in Resources */,
-				3D5508A922B09E7A00B551B6 /* Assets.xcassets in Resources */,
+				3D18B12722B3D8ED00737E4F /* GoogleService-Info.plist in Resources */,
 				3D5508A722B09E7900B551B6 /* Main.storyboard in Resources */,
+				3D18B12922B3DBB700737E4F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +278,7 @@
 				3D5508C322B0AE8B00B551B6 /* FIRDatabase.swift in Sources */,
 				3D5508BD22B0A6BE00B551B6 /* Cells.swift in Sources */,
 				3D5508A222B09E7900B551B6 /* AppDelegate.swift in Sources */,
+				3DDCF2ED22B76C03004A27B4 /* FIRStorage.swift in Sources */,
 				3DCE069722B21BAC00728FB0 /* NavigationControllers.swift in Sources */,
 				3DCE069522B2149500728FB0 /* ProductActionViewController.swift in Sources */,
 				3D5508C022B0ADA900B551B6 /* Models.swift in Sources */,
@@ -428,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GXE4438K84;
 				INFOPLIST_FILE = FirebaseQuery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GXE4438K84;
 				INFOPLIST_FILE = FirebaseQuery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

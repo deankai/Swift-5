@@ -47,8 +47,10 @@ extension BookField {
     func realPath(withBarCode barcode: Int? = nil) -> String {
         
         switch self {
-        case .Books: return "\(self)"
-        case .ISBN, .Title, .URL, .Icon, .Count, .Timestamp: return "\(BookField.Books)/\(BookField.BarCode)/\(barcode!)/(self)"
+        case .Books:
+            return "\(self)"
+        case .ISBN, .Title, .URL, .Icon, .Count, .Timestamp:
+            return "\(BookField.Books)/\(BookField.BarCode)/\(barcode!)/(self)"
         case .BarCode:
             if let barcode = barcode { return "\(BookField.Books)/\(self)/\(barcode)" }
             return "\(BookField.Books)/\(self)/"

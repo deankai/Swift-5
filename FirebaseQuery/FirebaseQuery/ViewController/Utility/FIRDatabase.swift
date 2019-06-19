@@ -10,7 +10,7 @@
 import UIKit
 import FirebaseDatabase
 
-// MARK: - Firebawse工具
+// MARK: - Firebase工具
 class FIRDatabase: NSObject {
 
     public static let shared = FIRDatabase()
@@ -26,27 +26,27 @@ extension FIRDatabase {
     /// 取值 (單次 / 及時) => 回傳realtime的handle代號
     func childValueFor(type: RealtimeDatabaseType, path: String, result: @escaping (Result<Any?, Error>) -> Void) -> UInt? {
         
+        var handleNumber: UInt?
+        
         switch type {
         case .single:
-            
-            let handleNumber = childValueForSingle(withPath: path) { (_result) in
+            handleNumber = childValueForSingle(withPath: path) { (_result) in
                 switch(_result) {
                 case .failure(let error): result(.failure(error))
                 case .success(let value): result(.success(value))
                 }
             }
-            return handleNumber
             
         case .realtime:
-            
-            let handleNumber = childValueForRealtime(withPath: path) { (_result) in
+            handleNumber = childValueForRealtime(withPath: path) { (_result) in
                 switch(_result) {
                 case .failure(let error): result(.failure(error))
                 case .success(let value): result(.success(value))
                 }
             }
-            return handleNumber
         }
+        
+        return handleNumber
     }
     
     /// 移除Realtime的Handle

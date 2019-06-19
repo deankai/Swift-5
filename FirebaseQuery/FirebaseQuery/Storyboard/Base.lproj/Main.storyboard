@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9I-py-96I">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StockViewController" customModule="FirebaseQuery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-LR-cOJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StockTableViewCell" id="DDW-jn-ECD" customClass="StockTableViewCell" customModule="FirebaseQuery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DDW-jn-ECD" id="FRW-zs-bVd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsA-PK-ubd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71.666666666666671"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74d-V9-fGD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="71.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stock_Off" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-Lt-kmp">
-                                                                    <rect key="frame" x="5.9999999999999964" y="5.9999999999999964" width="59.666666666666657" height="59.666666666666657"/>
+                                                                    <rect key="frame" x="6" y="6" width="59.5" height="59.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="Ocd-Lt-kmp" secondAttribute="height" id="Nuo-4t-ShA"/>
                                                                     </constraints>
@@ -51,16 +51,16 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx6-Nv-LBC">
-                                                            <rect key="frame" x="71.666666666666671" y="0.0" width="231.66666666666663" height="71.666666666666671"/>
+                                                            <rect key="frame" x="71.5" y="0.0" width="271" height="71.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tCO-uG-85w">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="231.66666666666666" height="71.666666666666671"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="271" height="71.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eml-Dk-bfa">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="231.66666666666666" height="47.666666666666664"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="271" height="47.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名稱" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-4p-wEZ">
-                                                                                    <rect key="frame" x="0.0" y="13.666666666666666" width="231.66666666666666" height="20.333333333333336"/>
+                                                                                    <rect key="frame" x="0.0" y="13.5" width="271" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -74,10 +74,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpt-aE-coh">
-                                                                            <rect key="frame" x="0.0" y="47.666666666666664" width="231.66666666666666" height="23.999999999999993"/>
+                                                                            <rect key="frame" x="0.0" y="47.5" width="271" height="24"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品編號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsU-lM-JYr">
-                                                                                    <rect key="frame" x="81.333333333333343" y="2" width="69.333333333333343" height="20.333333333333332"/>
+                                                                                    <rect key="frame" x="101" y="2" width="69.5" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -104,10 +104,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-rK-MaJ">
-                                                            <rect key="frame" x="303.33333333333331" y="0.0" width="71.666666666666686" height="71.666666666666671"/>
+                                                            <rect key="frame" x="342.5" y="0.0" width="71.5" height="71.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="數量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH3-G9-wYH">
-                                                                    <rect key="frame" x="18.666666666666682" y="25.666666666666671" width="34.666666666666657" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="18.5" y="25.5" width="35" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -194,7 +194,7 @@
                     <tabBarItem key="tabBarItem" title="庫存" image="Stock_Off" selectedImage="Stock_On" id="3Fm-VD-HbZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P4H-5q-k63">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -216,7 +216,7 @@
                     <tabBarItem key="tabBarItem" title="進貨" image="Plus_Off" selectedImage="Plus_On" id="e8E-3k-off"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D1f-ZZ-KFH">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -233,23 +233,23 @@
             <objects>
                 <viewController id="WvX-sS-5l5" customClass="ProductActionViewController" customModule="FirebaseQuery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LCB-SA-9jO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-4a-Q49">
-                                <rect key="frame" x="0.0" y="88" width="375" height="270.66666666666669"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2am-jK-vwd">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="90.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="請輸入書籍條碼" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1jq-lb-6Ix" customClass="MyTextField" customModule="FirebaseQuery" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="33" width="359" height="24"/>
+                                                <rect key="frame" x="8" y="18" width="398" height="24"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" textContentType="cc-number"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5t-EU-45Y">
-                                                <rect key="frame" x="8" y="59" width="359" height="1"/>
+                                                <rect key="frame" x="8" y="44" width="398" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="JIx-8S-W7x"/>
@@ -267,16 +267,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em8-Hc-H5d">
-                                        <rect key="frame" x="0.0" y="90.333333333333343" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="60" width="414" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="請輸入書籍名稱" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SpN-L5-nDt" customClass="MyTextField" customModule="FirebaseQuery" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="33" width="359" height="24"/>
+                                                <rect key="frame" x="8" y="18" width="398" height="24"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFM-rT-DHz">
-                                                <rect key="frame" x="8" y="59" width="359" height="1"/>
+                                                <rect key="frame" x="8" y="44" width="398" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="dNZ-cn-cFv"/>
@@ -294,16 +294,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHO-qX-b2q">
-                                        <rect key="frame" x="0.0" y="180.33333333333331" width="375" height="90.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="120" width="414" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="請輸入書籍數量" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="yXJ-oV-I8E" customClass="MyTextField" customModule="FirebaseQuery" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="33.333333333333371" width="359" height="24"/>
+                                                <rect key="frame" x="8" y="18" width="398" height="24"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" textContentType="cc-number"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-Kc-XtQ">
-                                                <rect key="frame" x="8" y="59.333333333333371" width="359" height="1"/>
+                                                <rect key="frame" x="8" y="44" width="398" height="1"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="xcb-wg-ZL7"/>
@@ -321,14 +321,49 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="yxf-Qt-4c7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7G-9S-4FH">
+                                <rect key="frame" x="0.0" y="268" width="414" height="545"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plI-PC-Id8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="545"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTs-sc-01I">
+                                                <rect key="frame" x="83" y="148.5" width="248" height="248"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="photograph:" destination="WvX-sS-5l5" eventType="touchUpInside" id="PDn-eT-jV9"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kmG-c7-VpO">
+                                                <rect key="frame" x="4" y="69.5" width="406" height="406"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kmG-c7-VpO" secondAttribute="height" id="bcP-tV-8L3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kmG-c7-VpO" firstAttribute="centerY" secondItem="plI-PC-Id8" secondAttribute="centerY" id="Agq-hZ-kdL"/>
+                                            <constraint firstItem="kmG-c7-VpO" firstAttribute="width" secondItem="plI-PC-Id8" secondAttribute="width" constant="-8" id="HYi-LH-29x"/>
+                                            <constraint firstItem="kmG-c7-VpO" firstAttribute="centerX" secondItem="plI-PC-Id8" secondAttribute="centerX" id="HzT-CY-Syk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OWe-4a-Q49" firstAttribute="height" secondItem="LCB-SA-9jO" secondAttribute="height" multiplier="1:3" id="8h4-t5-YYZ"/>
-                            <constraint firstItem="ch9-t3-PeQ" firstAttribute="trailing" secondItem="OWe-4a-Q49" secondAttribute="trailing" id="98j-JX-ESK"/>
-                            <constraint firstItem="OWe-4a-Q49" firstAttribute="leading" secondItem="ch9-t3-PeQ" secondAttribute="leading" id="bmF-R6-CrH"/>
-                            <constraint firstItem="OWe-4a-Q49" firstAttribute="top" secondItem="ch9-t3-PeQ" secondAttribute="top" id="rsb-Fk-3WP"/>
+                            <constraint firstItem="OWe-4a-Q49" firstAttribute="width" secondItem="LCB-SA-9jO" secondAttribute="width" id="6LX-FL-ARN"/>
+                            <constraint firstItem="OWe-4a-Q49" firstAttribute="top" secondItem="ch9-t3-PeQ" secondAttribute="top" id="733-Op-jUM"/>
+                            <constraint firstItem="OWe-4a-Q49" firstAttribute="centerX" secondItem="LCB-SA-9jO" secondAttribute="centerX" id="M4R-ea-l9s"/>
+                            <constraint firstItem="A7G-9S-4FH" firstAttribute="width" secondItem="LCB-SA-9jO" secondAttribute="width" id="PKl-65-uQu"/>
+                            <constraint firstItem="A7G-9S-4FH" firstAttribute="centerX" secondItem="LCB-SA-9jO" secondAttribute="centerX" id="Qjg-Y5-Y1K"/>
+                            <constraint firstItem="A7G-9S-4FH" firstAttribute="top" secondItem="OWe-4a-Q49" secondAttribute="bottom" id="iQi-V3-2f1"/>
+                            <constraint firstItem="ch9-t3-PeQ" firstAttribute="bottom" secondItem="A7G-9S-4FH" secondAttribute="bottom" id="mD4-c2-ze9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ch9-t3-PeQ"/>
                     </view>
@@ -347,6 +382,7 @@
                     <connections>
                         <outlet property="countTextField" destination="yXJ-oV-I8E" id="HlO-1R-nMo"/>
                         <outlet property="isbnTextField" destination="1jq-lb-6Ix" id="RsO-V9-kzQ"/>
+                        <outlet property="productImageView" destination="kmG-c7-VpO" id="301-dg-aeK"/>
                         <outlet property="titleTextField" destination="SpN-L5-nDt" id="pNO-gU-Izk"/>
                     </connections>
                 </viewController>
@@ -361,7 +397,7 @@
                     <tabBarItem key="tabBarItem" title="新品" image="Cart_Off" selectedImage="Cart_On" id="BJF-Cv-ynV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ov-Z2-NNG">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -380,7 +416,7 @@
                     <tabBarItem key="tabBarItem" title="出貨" image="Minus_Off" selectedImage="Minus_On" id="XQC-rm-juK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ADj-hX-hU2">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -399,7 +435,7 @@
                     <tabBarItem key="tabBarItem" title="修改" image="Fix_Off" selectedImage="Fix_On" id="UcL-KJ-aVS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hOd-F9-ABO">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -419,6 +455,7 @@
         <image name="Fix_On" width="30" height="30"/>
         <image name="Minus_Off" width="30" height="30"/>
         <image name="Minus_On" width="30" height="30"/>
+        <image name="NoIcon" width="200.33332824707031" height="158.66667175292969"/>
         <image name="Plus_Off" width="30" height="30"/>
         <image name="Plus_On" width="30" height="30"/>
         <image name="Stock_Off" width="30" height="30"/>

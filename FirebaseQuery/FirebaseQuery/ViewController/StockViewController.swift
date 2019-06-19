@@ -61,7 +61,10 @@ extension StockViewController: UITableViewDelegate, UITableViewDataSource {
                 
                 switch (result) {
                 case .failure(let error): KRProgressHUD.showError(withMessage: error.localizedDescription)
-                case .success(_): KRProgressHUD.showSuccess()
+                case .success(_):
+                    self.removeBookImage(withISBN: "\(isbn)", result: { (isOK) in
+                        KRProgressHUD.showSuccess()
+                    })
                 }
             }
         }
@@ -83,6 +86,7 @@ extension StockViewController {
         KRProgressHUD.show()
         
         let _handleNumber = bookInfomation(withType: .realtime) { (result) in
+            
             switch(result) {
             case .failure(let error):
                 KRProgressHUD.showError(withMessage: error.localizedDescription)
@@ -140,6 +144,14 @@ extension StockViewController {
             case .failure(let error): result(.failure(error))
             case .success(let isOK): result(.success(isOK))
             }
+        }
+    }
+    
+    /// 移除書籍圖片
+    private func removeBookImage(withISBN isbn: String, result: @escaping (Bool) -> Void) {
+
+        FIRStorage.shared.removeImage(withName: isbn, forFolder: FIRStorage.imageFolder) { (isOK) in
+            result(isOK)
         }
     }
 }
