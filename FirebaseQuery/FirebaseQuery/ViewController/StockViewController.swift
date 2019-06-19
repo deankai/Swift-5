@@ -14,6 +14,8 @@ class StockViewController: UIViewController {
 
     @IBOutlet var myTableView: UITableView!
     
+    let imageType: FIRStorage.ImageType = .jpeg
+    
     var handleNumber: UInt?
     var stockProducts = [Book]()
     
@@ -150,7 +152,7 @@ extension StockViewController {
     /// 移除書籍圖片
     private func removeBookImage(withISBN isbn: String, result: @escaping (Bool) -> Void) {
 
-        FIRStorage.shared.removeImage(withName: isbn, forFolder: FIRStorage.imageFolder) { (isOK) in
+        FIRStorage.shared.removeImage(withName: isbn, forFolder: FIRStorage.imageFolder, type: imageType) { (isOK) in
             result(isOK)
         }
     }

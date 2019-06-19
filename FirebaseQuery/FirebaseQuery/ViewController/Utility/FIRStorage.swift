@@ -81,8 +81,8 @@ extension FIRStorage {
     }
     
     /// 刪除圖片
-    func removeImage(withName name: String, forFolder fold: String, result: @escaping (Bool) -> Void) {
-        reference.child(fold).child(name).delete { (error) in
+    func removeImage(withName name: String, forFolder fold: String, type: ImageType, result: @escaping (Bool) -> Void) {
+        reference.child(fold).child(name + type.rawValue).delete { (error) in
             if let _ = error { result(false); return }
             result(true)
         }
