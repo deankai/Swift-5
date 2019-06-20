@@ -14,3 +14,6 @@
 
 ## FirebaseQuery - Firebase庫存APP
 ![FirebaseQuery - Firebase庫存APP](./_Gif_/FirebaseQuery.gif)
+
+## FirebaseOrder - Firebase排序功能
+![FirebaseOrder - Firebase排序功能](./_Gif_/FirebaseOrder.gif)
