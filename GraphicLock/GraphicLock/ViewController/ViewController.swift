@@ -39,14 +39,6 @@ class ViewController: UIViewController {
         initSetting()
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        lockCollectionView.touchesMoved(touches, with: event)
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        lockCollectionView.touchesEnded(touches, with: event)
-    }
-    
     /// 改變Row的數量
     @IBAction func changeLockRows(_ sender: UIStepper) {
         
@@ -151,7 +143,7 @@ extension ViewController {
         if let _currentPoint = currentPoint {
             
             let layerPath = lockShapeLayerPath(from: _currentPoint, to: point)
-            let lockShapeLayer = lockShapeLayerMaker(for: layerPath, color: .green)
+            let lockShapeLayer = lockShapeLayerMaker(for: layerPath, color: .red)
             
             lineLayers.append(lockShapeLayer)
             view.layer.addSublayer(lockShapeLayer)
